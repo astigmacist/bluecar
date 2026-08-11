@@ -1,0 +1,15 @@
+node_modules/
+.next/
+dist/
+.wrangler/
+.env
+backend/.venv/
+backend/.env
+backend/db.sqlite3
+backend/media/
+backend/
+docker-compose.yml
+outputs/
+__pycache__/
+*.py[cod]
+.DS_Store

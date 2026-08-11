@@ -1,0 +1,13 @@
+export type Trim = { id: number; name: string; price: string; battery_kwh?: number; range_km?: number; is_available?: boolean };
+export type Car = {
+  id: number; brand: string; model: string; year: number; engine_type: "BEV" | "PHEV" | "EREV" | "ICE"; status: "IN_STOCK" | "ON_ORDER";
+  price_from: string; min_price?: number; image_url: string; video_url?: string; range_km: number; power_hp: number; is_featured?: boolean; trims?: Trim[];
+};
+
+export const DEMO_CARS: Car[] = [
+  { id: 1, brand: "BYD", model: "Song Plus DM-i", year: 2026, engine_type: "PHEV", status: "IN_STOCK", price_from: "14900000", image_url: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1100&q=84", video_url: "https://www.youtube.com/results?search_query=BYD+Song+Plus+DM-i+review", range_km: 1100, power_hp: 197, is_featured: true, trims: [{ id: 1, name: "Flagship 110 km", price: "14900000" }, { id: 2, name: "Flagship Plus 150 km", price: "16100000" }] },
+  { id: 2, brand: "Li Auto", model: "L7 Pro", year: 2026, engine_type: "EREV", status: "ON_ORDER", price_from: "24800000", image_url: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1100&q=84", video_url: "https://www.youtube.com/results?search_query=Li+Auto+L7+review", range_km: 1315, power_hp: 449, is_featured: true, trims: [{ id: 3, name: "Pro", price: "24800000" }, { id: 4, name: "Max", price: "27100000" }] },
+  { id: 3, brand: "Zeekr", model: "001 YOU", year: 2026, engine_type: "BEV", status: "IN_STOCK", price_from: "23900000", image_url: "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1100&q=84", video_url: "https://www.youtube.com/results?search_query=Zeekr+001+review", range_km: 705, power_hp: 789, is_featured: true, trims: [{ id: 5, name: "ME AWD", price: "23900000" }, { id: 6, name: "YOU AWD", price: "26700000" }] },
+  { id: 4, brand: "Changan", model: "UNI-K", year: 2025, engine_type: "ICE", status: "ON_ORDER", price_from: "13200000", image_url: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1100&q=84", range_km: 680, power_hp: 226, trims: [{ id: 7, name: "Comfort", price: "13200000" }, { id: 8, name: "Tech", price: "14100000" }, { id: 9, name: "Limited", price: "15300000" }] },
+  { id: 5, brand: "Xiaomi", model: "SU7 Max", year: 2026, engine_type: "BEV", status: "ON_ORDER", price_from: "21800000", image_url: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1100&q=84", video_url: "https://www.youtube.com/results?search_query=Xiaomi+SU7+Max+review", range_km: 800, power_hp: 673, trims: [{ id: 10, name: "Pro", price: "21800000" }, { id: 11, name: "Max", price: "24900000" }] },
+];
