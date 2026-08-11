@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root { --background: #f7f9fc; --foreground: #1f2937; }
+:root { --background: #f7f9fc; --foreground: #1f2937; --font-manrope: "Manrope", Arial, sans-serif; --font-unbounded: "Unbounded", "Manrope", Arial, sans-serif; }
 @theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --font-sans: var(--font-manrope); --font-display: var(--font-unbounded); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
